@@ -1,0 +1,37 @@
+@import "../variables";
+.estimate {
+    width: 8rem;
+    height: 10rem;
+    border: darkgray solid 1px;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    cursor: pointer;
+    background: $accentBg;
+    box-shadow: 0 0 16px rgba(255, 255, 255, 0.2);
+}
+.estimate:hover {
+    box-shadow: 0 0 16px rgba(255, 255, 255, 0.5);
+}
+
+.estimateValue {
+    flex: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 150%;
+}
+
+.estimate:hover .estimateValue {
+    font-size: 200%;
+}
+.estimate:hover .estimateValue svg {
+    height: 4rem;
+    width: 4rem;
+}
+
+.estimateValue svg {
+    height: 3rem;
+    width: 3rem;
+}

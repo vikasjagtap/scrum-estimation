@@ -1,0 +1,24 @@
+@import "../variables";
+
+.estimationDetails {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  padding: 1rem;
+  .ticketHeader {
+    margin-bottom: 0.5rem;
+    span {
+      margin: 0 0.5rem;
+    }
+    .ticketNumber {
+      margin-left: 0;
+    }
+  }
+
+  textarea[disabled] {
+    opacity: 1;
+    resize: none;
+    color: $baseFg;
+    background: rgba($baseFg, 0.1);
+  }
+}

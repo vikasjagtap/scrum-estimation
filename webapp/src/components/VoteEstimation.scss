@@ -1,0 +1,31 @@
+@import "../variables";
+.estimation {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    fill: $baseFg;
+
+    .estimationHeader {
+        display: inline-flex;
+        align-items: center;
+        height: 4rem;
+        padding: 0 1rem;
+    }
+
+    .estimationHeaderEstimation {
+        margin: 0 1rem;
+        display: inline-flex;
+        align-items: center;
+        font-size: 130%;
+    }
+
+    .estimationHeaderEstimation svg {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    button {
+        align-self: center;
+    }
+}
+

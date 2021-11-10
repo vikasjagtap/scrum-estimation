@@ -1,0 +1,12 @@
+@import "../variables";
+.ModerateEstimation {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    fill: $baseFg;
+
+    button {
+        align-self: center;
+    }
+}
+

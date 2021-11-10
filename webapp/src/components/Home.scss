@@ -1,0 +1,58 @@
+@import "../variables";
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner {
+    align-self: stretch;
+    height: 300px;
+    background: $accentBg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    box-shadow: $smShadow;
+    z-index: 5;
+}
+
+.banner h2 {
+    color: $accentFg;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+.createSession, .joinSession {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.createSession {
+    align-items: flex-end;
+}
+
+.joinSession .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.or {
+    padding: 0 1rem;
+}
+
+.joinSession .br {
+    margin: 0;
+    padding: 0;
+}
+
+.joinSession select {
+    flex: 1;
+}
+
+

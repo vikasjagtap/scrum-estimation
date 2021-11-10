@@ -1,0 +1,170 @@
+@import "src/variables";
+
+.sessionUpdate {
+    display: flex;
+    justify-self: flex-end;
+    flex-basis: 400px;
+    background: $accentBg;
+    color: $baseBg;
+    flex-direction: column;
+    box-shadow: -1px 0 2px 2px black;
+    background: $baseFg;
+    justify-content: center;
+
+
+    .sessionLoading.dark {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        svg {
+            fill: $accentBg;
+        }
+    }
+    .header {
+        height: 4rem;
+
+        border-radius: 10px 10px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .sessionDetails {
+            font-size: 40%;
+            margin: 0.1rem 0.5rem;
+        }
+
+        .personDetails {
+            flex: 1;
+            font-size: 70%;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .estimators,
+    .updates,
+    .footer {
+        font-size: 60%;
+        background: lighten($baseBg, 70%);
+    }
+
+    .estimators {
+        .estimatorHeader {
+            padding: 0.5rem;
+        }
+        .estimator {
+            padding: 0.5rem;
+        }
+    }
+
+    .updates {
+        display: flex;
+        flex-direction: column-reverse;
+        flex: 1;
+        border-top: lighten($accentFg, 60%) 1px solid;
+        .sessionConnection {
+            align-self: center;
+            text-align: center;
+            font-size: 75%;
+            padding: 0.5rem;
+            display: inline-block;
+            color: lighten($baseBg, 40%);
+            .triangle, .sender {
+                display: none;
+            }
+            border-radius: 0.5rem;
+        }
+
+        .message {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0.5rem 1rem;
+
+            .triangle{
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 0.3rem 0.3rem 0.3rem;
+                margin: 0 0.5rem;
+            }
+
+            .messageContent {
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+                color: $baseFg;
+                word-break: break-word;
+                max-width: 75%;
+                box-shadow: 5px 5px 15px rgba($updatesDark, 0.5);
+            }
+
+            .sender {
+                font-size: 75%;
+                opacity: 0.6;
+                font-weight: 600;
+                padding: 0 0.5rem;
+                text-align: left;
+            }
+
+            &.incoming {
+                .triangle{
+                    border-color: transparent transparent $baseBg transparent;
+                }
+                .messageContent {
+                    background: $baseBg;
+                    color: $baseFg;
+                }
+            }
+
+            &.outgoing {
+                align-items: flex-end;
+                .messageContent {
+                    background: lighten($accentBg, 20%);
+                    color: $accentFg;
+                }
+                .triangle{
+                    border-color: transparent transparent lighten($accentBg, 20%) transparent;
+                }
+            }
+
+
+        }
+    }
+
+    .footer {
+        height: 3rem;
+        display: flex;
+        background: lighten($baseBg, 75%);
+        border-top: lighten($accentFg, 60%) 1px solid;
+        input {
+            background: transparent;
+            color: $accentBg;
+            flex: auto;
+            outline: none;
+            border-radius: 0 0 0.5rem 0;
+            &::placeholder {
+                opacity: 0.5;
+                color: $accentBg;
+            }
+        }
+
+        button {
+            background: none;
+            border: none;
+            outline: none;
+            width: auto;
+            min-width: 0;
+            opacity: 0.5;
+            color: $accentBg;
+
+            &:hover {
+                background: none;
+                border: none;
+                outline: none;
+                color: $accentBg;
+                opacity: 1;
+            }
+        }
+    }
+
+}

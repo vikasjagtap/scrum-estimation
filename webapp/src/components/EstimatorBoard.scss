@@ -1,0 +1,23 @@
+@import "../variables";
+.EstimatorBoard {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    flex-direction: column;
+
+    .estimators {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        .estimator {
+            display: block;
+            font-size: 50%;
+            align-self: center;
+            text-align: center;
+            .estimateValue svg {
+                fill: $baseFg;
+            }
+        }
+    }
+}
