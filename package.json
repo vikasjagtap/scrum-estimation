@@ -1,0 +1,28 @@
+{
+  "name": "iq-story-estimation",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "concurrently \"SET NODE_ENV=development&SET PORT=3000&nodemon\" \"cd webapp&SET PORT=3001&npm start\""
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "lodash": "^4.17.15",
+    "md5": "^2.2.1",
+    "morgan": "~1.9.1",
+    "node-sass-middleware": "0.11.0",
+    "node-uuid": "^1.4.8",
+    "nodemon": "^2.0.3",
+    "pug": "2.0.0-beta11",
+    "react-uid": "^2.2.0",
+    "socket.io": "^2.3.0",
+    "sqlite3": "^5.0.2"
+  }
+}
